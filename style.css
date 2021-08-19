@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_Side{
+    position: relative;
+    background: #2b6374;
+    padding: 40px;
+}
+
+.profileText{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBx{
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+} 
+
+.profileText .imgBx img{
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo{
+    padding-top: 40px;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul{
+    position: relative;
+}
+
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #033e75;
+}
+
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.contactInfo ul li .text a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.contactInfo.education li{
+    margin-bottom: 15px;
+}
+
+.contactInfo.education h5{
+    color: #03a8e4;
+    font-weight: 500;
+}
+
+.contactInfo.education h4:nth-child(2){
+    font-weight: 600;
+    color: #fff;
+}
+
+.contactInfo.education h4{
+    font-weight: 200;
+    color: #fff;
+}
+
+.contactInfo.language .percent{
+    position: relative;
+    height: 6px;
+    background: rgb(15, 0, 2);
+    display: block;
+    margin-top: 5px;
+} 
+
+.contactInfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a8e4;    
+}
+
+
+
+.container .right_Side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child{
+    margin-bottom: 0;
+}
+
+.title2{
+    color: #2b6374;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.title3{
+    color: #333;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.about p{
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.about-list{
+    margin-bottom: 10px;
+}
+
+.about-list li{
+    list-style-type: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+}
+
+.box h4{
+    text-transform: uppercase;
+    color: #848c98;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a8e4;
+}
+
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.interest li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.interest ul li .fas{
+    color: #03a8e4;
+    font-size: 18px;
+    width: 20px;
+}
+
+.logo{
+    position: relative;
+}
+
+@media (max-width: 1000px) {
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }   
+}
